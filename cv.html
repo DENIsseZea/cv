@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Currículum Vitae — Denisse Guadalupe Zea Gutiérrez</title>
+    <style>
+        :root {
+            --bg: #0f0a1f;
+            --card: #1e1530;
+            --accent1: #7c3aed;
+            --accent2: #a78bfa;
+            --muted: #c7b8f8;
+            --glass: rgba(255, 255, 255, 0.04);
+            --shadow: 0 8px 30px rgba(2, 0, 36, 0.6);
+            --radius: 14px;
+            --maxw: 1100px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--bg) 0%, #0a0420 60%);
+            color: #efeefe;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: var(--maxw);
+        }
+
+        /* Make the CV fully viewable by removing fixed heights and allowing scroll */
+        .cv {
+            width: 100%;
+            background: linear-gradient(180deg, var(--card), rgba(30, 21, 48, 0.96));
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: visible;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 0;
+        }
+
+        @media (max-width:920px) {
+            .cv {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .sidebar {
+            padding: 26px 20px;
+            background: linear-gradient(180deg, rgba(124, 58, 237, 0.10), rgba(167, 139, 250, 0.02));
+            border-right: 1px solid rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 14px
+        }
+
+        .photo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center
+        }
+
+        .photo {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, var(--accent1), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 260px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px
+        }
+
+        h2 {
+            margin: 4px 0 0 0;
+            font-size: 13px;
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        .contact {
+            font-size: 14px;
+            color: #efeefe;
+            opacity: 0.95
+        }
+
+        .contact a {
+            color: var(--muted);
+            text-decoration: none
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 12px;
+            border-radius: 10px
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .main {
+            padding: 26px 28px
+        }
+
+        .section {
+            margin-bottom: 16px
+        }
+
+        .section h3 {
+            margin: 0 0 8px 0;
+            color: var(--accent1);
+            font-size: 15px
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px
+        }
+
+        .footer {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 13px
+        }
+
+        /* Allow the entire document to be read/printed */
+        @media print {
+            body {
+                background: #fff;
+                color: #000
+            }
+
+            .cv {
+                box-shadow: none;
+                border-radius: 0
+            }
+
+            .sidebar {
+                background: transparent
+            }
+
+            .photo {
+                box-shadow: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <article class="cv" role="document" aria-label="Currículum Vitae">
+            <aside class="sidebar">
+                <div class="photo-container">
+                    <div class="photo" aria-hidden="false">
+                        <img alt="Foto de Denisse Guadalupe Zea Gutiérrez"
+                            src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="%237c3aed"/><stop offset="1" stop-color="%23a78bfa"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g)"/><g fill="white" opacity="0.95"><circle cx="400" cy="300" r="140"/><rect x="200" y="470" width="400" height="160" rx="80"/></g><text x="50%" y="95%" font-size="42" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, Helvetica, sans-serif">Tu Foto</text></svg>' />
+                    </div>
+                </div>
+
+                <div>
+                    <h1>Denisse Guadalupe Zea Gutiérrez</h1>
+                    <h2>Ingenieria en sistemas computacionales.</h2>
+                </div>
+
+                <div class="card contact">
+                    <div><strong>Contacto</strong></div>
+                    <div class="muted">Correo: <a href="denissezea04@gmail.com">denissezea04@gmail.com</a></div>
+                    <div class="muted">Teléfono: +52 461 305 6737</div>
+                    <div class="muted">Ubicación: Celaya, Guanajuato — México.</div>
+                </div>
+
+                <div class="card">
+                    <div><strong>Perfil</strong></div>
+                    <p class="muted" style="margin:6px 0 0 0;">Estudiante de la ingenieria en sistemas computacionales en proceso de finalización, 
+                        con enfoque a la administración de base de datos aprendiendo a manejar diferentes motores de bases de datos.</p>
+                </div>
+
+                <div>
+                    <div style="margin-bottom:6px"><strong>Herramientas & Tecnologías</strong></div>
+                    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px">
+                        <div class="card muted" style="background:transparent;padding:8px;">Git & GitHub</div>
+                        <div class="card muted" style="background:transparent;padding:8px;">Python & SQL</div>
+                        <div class="card muted" style="background:transparent;padding:8px;">Técnicas de investigación
+                        </div>
+                        <div class="card muted" style="background:transparent;padding:8px;">Manejo de datos</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div style="margin-bottom:6px"><strong>Idiomas</strong></div>
+                    <div class="card muted" style="background:transparent;padding:8px;">Español — Nativo</div>
+                    <div class="card muted" style="background:transparent;padding:8px;">Inglés — Intermedio (B1-B2)
+                    </div>
+                </div>
+
+                <div style="margin-top:auto">
+                    <div class="muted">Disponible para mudanza o residencia dentro o fuera del país.</div>
+                </div>
+            </aside>
+
+            <main class="main">
+                <section class="section">
+                    <h3>Objetivo profesional</h3>
+                    <div class="card">
+                        <p class="muted">
+                            Mi objetivo es desarrollarme profesionalmente en el área de 
+                            bases de datos, especializándome en el diseño, modelado, 
+                            administración y optimización de sistemas de información. 
+                            Aspiro a aplicar mis conocimientos para garantizar la integridad, 
+                            disponibilidad y eficiencia de los datos, así como implementar 
+                            soluciones que mejoren los procesos internos y apoyen la toma de 
+                            decisiones dentro de la organización. Además, busco continuar 
+                            aprendiendo nuevas tecnologías, metodologías y herramientas que me 
+                            permitan crecer y aportar valor en entornos dinámicos y orientados a la innovación.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Formación académica</h3>
+                    <div class="card">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+                            <div>
+                                <strong>Ingenieria en sistemas computacionales.</strong>
+                                <div class="muted">Tecnológico Nacional de México en Celaya — En curso</div>
+                                <div class="muted">Semestres restantes: 3 — Fecha estimada de finalización: 2027
+                                </div>
+                            </div>
+                            <div class="muted">Promedio: 87</div>
+                        </div>
+                        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Habilidades clave</h3>
+                    <div class="card">
+                        <ul class="muted">
+                            <li>Razonamiento clínico y pensamiento crítico.</li>
+                            <li>Comunicación empática y escucha activa con pacientes.</li>
+                            <li>Trabajo en equipo multidisciplinario y ética profesional.</li>
+                            <li>Investigación, análisis de datos y manejo de herramientas digitales.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3>Herramientas, conocimientos y dónde aprenderlos</h3>
+                    <div class="card">
+                        <ul class="muted">
+                            <li><strong>Modelado y diseño de bases de datos:</strong> Normalización, diseño conceptual y lógico, diagramas entidad–relación y buenas prácticas de arquitectura.</li>
+                            <li><strong>Manejo de tecnologías y herramientas:</strong> Sistemas gestores de bases de datos como MySQL, PostgreSQL y SQL Server; además de nociones de programación en Python para análisis de datos. Aprendizaje sugerido mediante documentación oficial, tutoriales prácticos y cursos en Udemy o YouTube.</li>
+                            <li><strong>Competencias analíticas:</strong> Lectura crítica, investigación técnica y consulta de artículos relacionados con ciencia de datos, ingeniería de datos y optimización de consultas. Plataformas útiles: Google Scholar, ResearchGate y repositorios especializados.</li>
+                            <li><strong>Recursos gratuitos para formación continua:</strong> Capacite para el empleo fundación Carlos Slim, Khan Academy y bibliotecas universitarias, que permiten acceder a manuales, guías y material de consulta actualizado.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Experiencia & Proyectos</h3>
+                    <div class="card">
+                        <ul class="muted">
+                            <li>Análisis de datos con Python para visualizaciones y reportes.</li>
+                            <li>Participación en talleres y congresos sobre IA, ciencia de datos.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Habilidades personales a fortalecer</h3>
+                    <div class="card">
+                        <ul class="muted">
+                            <li>Comunicación clara y empática.</li>
+                            <li>Disciplina, organización y gestión del tiempo.</li>
+                            <li>Razonamiento lógico, pensamiento crítico y resolución de problemas.</li>
+                            <li>Trabajo en equipo y responsabilidad profesional.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Referencias</h3>
+                    <div class="card muted">
+                        Referencias disponibles a solicitud: profesores y supervisores de proyectos académicos o
+                        actividades de voluntariado.
+                    </div>
+                </section>
+
+                <div
+                    style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;flex-wrap:wrap">
+                    <div class="muted">Última actualización: 4 de diciembre 2025</div>
+                    <div class="footer">
+                        <a class="btn" href="#" onclick="downloadHTML()">Descargar HTML</a>
+                        <a class="btn" href="#" onclick="window.print()">Imprimir / Guardar PDF</a>
+                    </div>
+                </div>
+
+            </main>
+        </article>
+    </div>
+
+    <script>
+        // Función para descargar el HTML completo si deseas guardar el CV localmente
+        function downloadHTML() {
+            const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = 'cv_[tu-nombre].html';
+            document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+
+</html>
